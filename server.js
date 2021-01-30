@@ -1,7 +1,7 @@
 const path = require('path');
 const express = require('express');
 const app = express();
-const publicPath = path.join(__dirname, './website/build'); // client
+const publicPath = path.join(__dirname, './client/build'); // client
 const port = process.env.PORT || 3001;
 app.use(express.static(publicPath));
 app.get('*', (req, res) => {
