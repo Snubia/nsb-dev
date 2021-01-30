@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
-import prof from '../images/prof.jpeg';
+import love from '../images/love.jpeg';
 import techy from '../images/techy.jpeg';
+import meteo from '../images/meteo.jpeg';
+import note from '../images/note.jpeg';
+import tracker from '../images/tracker.jpeg';
 import glam from '../images/glam.jpeg';
+import tictac from '../images/tictac.jpeg';
 import {
   Tabs,
   Tab,
@@ -48,9 +52,9 @@ class Projects extends Component {
               Redux and MongoDB
             </CardText>
             <CardActions border>
-              <Button colored>GitHub</Button>
+              <Button href="https://github.com/Snubia/DevLounge" colored target='_blank'>GitHub</Button>
 
-              <Button colored>Live Demo</Button>
+              <Button href="https://still-caverns-19224.herokuapp.com/" colored target='_blank'>Live Demo</Button>
             </CardActions>
             <CardMenu style={{ color: '#fff' }}>
               <IconButton name='share' />
@@ -68,20 +72,19 @@ class Projects extends Component {
               }}
             >
               <img
-                src={prof}
+                src={love}
                 alt='avatar'
                 style={{ height: '400px' }}
               />
-              GlamHouse
+              iMatchHearts
             </CardTitle>
             <CardText>
-              A complete E-commerce Website using Node.js, MongoDb, Ejs, Multer
-              and stripe for payment carts
+            A Dating App using Node.js, handlebars, Mongo.DB, facebook and google login, payment options using Stripe.
             </CardText>
             <CardActions border>
-              <Button href="" colored>GitHub</Button>
+              <Button href="https://github.com/Snubia/iMatchHearts" colored target='_blank'>GitHub</Button>
 
-              <Button colored>Live Demo</Button>
+              <Button href="https://vast-cliffs-42692.herokuapp.com/" colored target='_blank'>Live Demo</Button>
             </CardActions>
             <CardMenu style={{ color: '#fff' }}>
               <IconButton name='share' />
@@ -103,6 +106,124 @@ class Projects extends Component {
                 alt='avatar'
                 style={{ height: '175px' }}
               />
+              GlamHouse
+            </CardTitle>
+            <CardText>
+            An E-commerce Website using Node.js, MongoDb, Ejs, Multer and Stripe
+            </CardText>
+            <CardActions border>
+              <Button href="https://github.com/Snubia/NSB_GlamHouse" colored  target='_blank'>GitHub</Button>
+
+              <Button href="https://limitless-citadel-93108.herokuapp.com/"  colored target='_blank'>Live Demo</Button>
+            </CardActions>
+            <CardMenu style={{ color: '#fff' }}>
+              <IconButton name='share' />
+            </CardMenu>
+          </Card>
+
+           {/* Project 4 */}
+           <Card shadow={5} style={{ minWidth: '500', margin: 'auto' }}>
+            <CardTitle
+              style={{
+                color: '#fff',
+                height: '200px',
+                background:
+                  'url(https://github.com/Snubia/Employee_Directoy/blob/master/dem.jpeg) center / cover',
+              }}
+            >
+              <img
+                src={tictac}
+                alt='avatar'
+                style={{ height: '175px' }}
+              />
+              Tic-tac-toe
+            </CardTitle>
+            <CardText>
+            A tic tac toe game using React.js
+            </CardText>
+            <CardActions border>
+              <Button href="https://github.com/Snubia/game_tictactoe" colored  target='_blank'>GitHub</Button>
+
+              <Button href="https://github.com/Snubia/game_tictactoe"  colored target='_blank'>Live Demo</Button>
+            </CardActions>
+            <CardMenu style={{ color: '#fff' }}>
+              <IconButton name='share' />
+            </CardMenu>
+          </Card>
+
+           {/* Project 5 */}
+           <Card shadow={5} style={{ minWidth: '500', margin: 'auto' }}>
+            <CardTitle
+              style={{
+                color: '#fff',
+                height: '200px',
+                background:
+                  'url(https://github.com/Snubia/Employee_Directoy/blob/master/dem.jpeg) center / cover',
+              }}
+            >
+              <img
+                src={note}
+                alt='avatar'
+                style={{ height: '175px' }}
+              />
+              NoteTaker
+            </CardTitle>
+            <CardText>
+            A note taker App with Node.js
+            </CardText>
+            <CardActions border>
+              <Button href="https://github.com/Snubia/Taker" colored  target='_blank'>GitHub</Button>
+
+              <Button href="https://snubia.github.io/Taker/"  colored target='_blank'>Live Demo</Button>
+            </CardActions>
+            <CardMenu style={{ color: '#fff' }}>
+              <IconButton name='share' />
+            </CardMenu>
+          </Card>
+          {/* Project 3 */}
+          <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+            <CardTitle
+              style={{
+                color: '#fff',
+                height: '176px',
+                background:
+                  'url(https://github.com/Snubia/Employee_Directoy/blob/master/dem.jpeg) center / cover',
+              }}
+            >
+                <img
+                src={tracker}
+                alt='avatar'
+                style={{ height: '175px' }}
+              />
+              Budget Tracker
+            </CardTitle>
+            <CardText>
+              Online/Offline Budget tracker with Node.js
+            </CardText>
+            <CardActions border>
+              <Button href="https://github.com/Snubia/Budgeting" colored target='_blank'>GitHub</Button>
+
+              <Button href="https://mighty-lake-47205.herokuapp.com/" colored target='_blank'>Live Demo</Button>
+            </CardActions>
+            <CardMenu style={{ color: '#fff' }}>
+              <IconButton name='share' />
+            </CardMenu>
+          </Card>
+          {/* Project 3 */}
+          <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+            <CardTitle
+              style={{
+                color: '#fff',
+                height: '176px',
+                background:
+                  'url(https://github.com/Snubia/Employee_Directoy/blob/master/dem.jpeg) center / cover',
+              }}
+            >
+                <img
+                src={glam}
+                alt='avatar'
+                style={{ height: '175px' }}
+              />
               Employee Directory
             </CardTitle>
             <CardText>
@@ -110,9 +231,9 @@ class Projects extends Component {
               industry. Lorem Ipsum has been the industry's
             </CardText>
             <CardActions border>
-              <Button href="https://limitless-citadel-93108.herokuapp.com/" colored  target='_blank'>GitHub</Button>
+              <Button colored target='_blank'>GitHub</Button>
 
-              <Button colored>Live Demo</Button>
+              <Button colored target='_blank'>Live Demo</Button>
             </CardActions>
             <CardMenu style={{ color: '#fff' }}>
               <IconButton name='share' />
@@ -133,16 +254,20 @@ class Projects extends Component {
                   '',
               }}
             >
-              React Project #4
+              <img
+                src={meteo}
+                alt='avatar'
+                style={{ height: '175px' }}
+              />
+              Meteo
             </CardTitle>
             <CardText>
-              A MERN social media platform for developers using React, Node,
-              Redux and MongoDB
+              A 5 days forecast weather App with Javascript and OpenWeather API
             </CardText>
             <CardActions border>
-              <Button colored>GitHub</Button>
+              <Button href="https://github.com/Snubia/meteo" colored target='_blank'>GitHub</Button>
 
-              <Button colored>Live Demo</Button>
+              <Button href="https://snubia.github.io/meteo/" colored target='_blank'>Live Demo</Button>
             </CardActions>
             <CardMenu style={{ color: '#fff' }}>
               <IconButton name='share' />
@@ -166,9 +291,9 @@ class Projects extends Component {
               and stripe for payment carts
             </CardText>
             <CardActions border>
-              <Button colored>GitHub</Button>
+              <Button colored target='_blank'>GitHub</Button>
 
-              <Button colored>Live Demo</Button>
+              <Button colored target='_blank'>Live Demo</Button>
             </CardActions>
             <CardMenu style={{ color: '#fff' }}>
               <IconButton name='share' />
@@ -192,9 +317,9 @@ class Projects extends Component {
               industry. Lorem Ipsum has been the industry's
             </CardText>
             <CardActions border>
-              <Button colored>GitHub</Button>
+              <Button colored target='_blank'>GitHub</Button>
 
-              <Button colored>Live Demo</Button>
+              <Button colored target='_blank'>Live Demo</Button>
             </CardActions>
             <CardMenu style={{ color: '#fff' }}>
               <IconButton name='share' />
