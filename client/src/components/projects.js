@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import love from '../images/love.jpeg';
 import techy from '../images/techy.jpeg';
 import meteo from '../images/meteo.jpeg';
-//import note from '../images/note.jpeg';
+import game from '../images/game.jpeg';
 import tracker from '../images/tracker.jpeg';
 import glam from '../images/glam.jpeg';
 import tictac from '../images/tictac.jpeg';
@@ -121,73 +121,17 @@ class Projects extends Component {
             </CardMenu>
           </Card>
 
-           {/* Project 4 */}
-           <Card shadow={5} style={{ minWidth: '500', margin: 'auto' }}>
-            <CardTitle
-              style={{
-                color: '#fff',
-                height: '200px',
-                background:
-                  'url(https://github.com/Snubia/Employee_Directoy/blob/master/dem.jpeg) center / cover',
-              }}
-            >
-              <img
-                src={tictac}
-                alt='avatar'
-                style={{ height: '175px' }}
-              />
-              Tic-tac-toe
-            </CardTitle>
-            <CardText>
-            A tic tac toe game using React.js
-            </CardText>
-            <CardActions border>
-              <Button href="https://github.com/Snubia/game_tictactoe" colored  target='_blank'>GitHub</Button>
-
-              <Button href="https://github.com/Snubia/game_tictactoe"  colored target='_blank'>Live Demo</Button>
-            </CardActions>
-            <CardMenu style={{ color: '#fff' }}>
-              <IconButton name='share' />
-            </CardMenu>
-          </Card>
+       
 
         
-          {/* Project 3 */}
-          <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
-            <CardTitle
-              style={{
-                color: '#fff',
-                height: '176px',
-                background:
-                  'url(https://github.com/Snubia/Employee_Directoy/blob/master/dem.jpeg) center / cover',
-              }}
-            >
-                <img
-                src={tracker}
-                alt='avatar'
-                style={{ height: '175px' }}
-              />
-              Budget Tracker
-            </CardTitle>
-            <CardText>
-              Online/Offline Budget tracker with Node.js
-            </CardText>
-            <CardActions border>
-              <Button href="https://github.com/Snubia/Budgeting" colored target='_blank'>GitHub</Button>
-
-              <Button href="https://mighty-lake-47205.herokuapp.com/" colored target='_blank'>Live Demo</Button>
-            </CardActions>
-            <CardMenu style={{ color: '#fff' }}>
-              <IconButton name='share' />
-            </CardMenu>
-          </Card>
+          
           
         </div>
       );
     } else if (this.state.activeTab === 1) {
       return (
         <div className='projects-grid'>
-          {/* Project 4 */}
+          {/* Project A */}
           <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
             <CardTitle
               style={{
@@ -217,7 +161,37 @@ class Projects extends Component {
             </CardMenu>
           </Card>
 
-          {/* Project 2 */}
+              {/* Project B */}
+              <Card shadow={5} style={{ minWidth: '500', margin: 'auto' }}>
+            <CardTitle
+              style={{
+                color: '#fff',
+                height: '200px',
+                background:
+                  'url(https://github.com/Snubia/Employee_Directoy/blob/master/dem.jpeg) center / cover',
+              }}
+            >
+              <img
+                src={tictac}
+                alt='avatar'
+                style={{ height: '175px' }}
+              />
+              Tic-tac-toe
+            </CardTitle>
+            <CardText>
+            A tic tac toe game using React.js
+            </CardText>
+            <CardActions border>
+              <Button href="https://github.com/Snubia/game_tictactoe" colored  target='_blank'>GitHub</Button>
+
+              <Button href="https://github.com/Snubia/game_tictactoe"  colored target='_blank'>Live Demo</Button>
+            </CardActions>
+            <CardMenu style={{ color: '#fff' }}>
+              <IconButton name='share' />
+            </CardMenu>
+          </Card>
+
+          {/* Project C */}
           <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
             <CardTitle
               style={{
@@ -227,22 +201,31 @@ class Projects extends Component {
                   '',
               }}
             >
-              GlamHouse
+              <img
+                src={game}
+                alt='avatar'
+                style={{ height: '175px' }}
+              />
+              Breakout
             </CardTitle>
             <CardText>
-              A complete E-commerce Website using Node.js, MongoDb, Ejs, Multer
-              and stripe for payment carts
+              A Breakout game using HTML, Javascript, CSS and Canvas
             </CardText>
             <CardActions border>
               <Button colored target='_blank'>GitHub</Button>
 
-              <Button colored target='_blank'>Live Demo</Button>
+              <Button href="https://snubia.github.io/casse-restart/" colored target='_blank'>Live Demo</Button>
             </CardActions>
             <CardMenu style={{ color: '#fff' }}>
               <IconButton name='share' />
             </CardMenu>
           </Card>
 
+        </div>
+      );
+    } else if (this.state.activeTab === 2) {
+      return (
+        <div>
           {/* Project 3 */}
           <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
             <CardTitle
@@ -253,27 +236,25 @@ class Projects extends Component {
                   'url(https://github.com/Snubia/Employee_Directoy/blob/master/dem.jpeg) center / cover',
               }}
             >
-              Employee Directory
+                <img
+                src={tracker}
+                alt='avatar'
+                style={{ height: '175px' }}
+              />
+              Budget Tracker
             </CardTitle>
             <CardText>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's
+              Online/Offline Budget tracker with Node.js
             </CardText>
             <CardActions border>
-              <Button colored target='_blank'>GitHub</Button>
+              <Button href="https://github.com/Snubia/Budgeting" colored target='_blank'>GitHub</Button>
 
-              <Button colored target='_blank'>Live Demo</Button>
+              <Button href="https://mighty-lake-47205.herokuapp.com/" colored target='_blank'>Live Demo</Button>
             </CardActions>
             <CardMenu style={{ color: '#fff' }}>
               <IconButton name='share' />
             </CardMenu>
           </Card>
-        </div>
-      );
-    } else if (this.state.activeTab === 2) {
-      return (
-        <div>
-          <h1>Other Languages</h1>
         </div>
       );
     } else if (this.state.activeTab === 3) {
@@ -293,9 +274,9 @@ class Projects extends Component {
           onChange={(tabId) => this.setState({ activeTab: tabId })}
           ripple
         >
-          <Tab>React/Node/MongoDB</Tab>
-          <Tab>Javascript/HTML/CSS</Tab>
-          <Tab>Others</Tab>
+          <Tab>MERN/Fullstack</Tab>
+          <Tab>FrontEnd & API</Tab>
+          <Tab>BackEnd</Tab>
         </Tabs>
 
         <Grid>
