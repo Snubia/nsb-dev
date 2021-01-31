@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import love from '../images/love.jpeg';
 import techy from '../images/techy.jpeg';
 import meteo from '../images/meteo.jpeg';
-import note from '../images/note.jpeg';
+//import note from '../images/note.jpeg';
 import tracker from '../images/tracker.jpeg';
 import glam from '../images/glam.jpeg';
 import tictac from '../images/tictac.jpeg';
@@ -74,7 +74,7 @@ class Projects extends Component {
               <img
                 src={love}
                 alt='avatar'
-                style={{ height: '400px' }}
+                style={{ height: '200px' }}
               />
               iMatchHearts
             </CardTitle>
@@ -151,35 +151,7 @@ class Projects extends Component {
             </CardMenu>
           </Card>
 
-           {/* Project 5 */}
-           <Card shadow={5} style={{ minWidth: '500', margin: 'auto' }}>
-            <CardTitle
-              style={{
-                color: '#fff',
-                height: '200px',
-                background:
-                  'url(https://github.com/Snubia/Employee_Directoy/blob/master/dem.jpeg) center / cover',
-              }}
-            >
-              <img
-                src={note}
-                alt='avatar'
-                style={{ height: '175px' }}
-              />
-              NoteTaker
-            </CardTitle>
-            <CardText>
-            A note taker App with Node.js
-            </CardText>
-            <CardActions border>
-              <Button href="https://github.com/Snubia/Taker" colored  target='_blank'>GitHub</Button>
-
-              <Button href="https://snubia.github.io/Taker/"  colored target='_blank'>Live Demo</Button>
-            </CardActions>
-            <CardMenu style={{ color: '#fff' }}>
-              <IconButton name='share' />
-            </CardMenu>
-          </Card>
+        
           {/* Project 3 */}
           <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
             <CardTitle
@@ -209,36 +181,7 @@ class Projects extends Component {
               <IconButton name='share' />
             </CardMenu>
           </Card>
-          {/* Project 3 */}
-          <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
-            <CardTitle
-              style={{
-                color: '#fff',
-                height: '176px',
-                background:
-                  'url(https://github.com/Snubia/Employee_Directoy/blob/master/dem.jpeg) center / cover',
-              }}
-            >
-                <img
-                src={glam}
-                alt='avatar'
-                style={{ height: '175px' }}
-              />
-              Employee Directory
-            </CardTitle>
-            <CardText>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's
-            </CardText>
-            <CardActions border>
-              <Button colored target='_blank'>GitHub</Button>
-
-              <Button colored target='_blank'>Live Demo</Button>
-            </CardActions>
-            <CardMenu style={{ color: '#fff' }}>
-              <IconButton name='share' />
-            </CardMenu>
-          </Card>
+          
         </div>
       );
     } else if (this.state.activeTab === 1) {
